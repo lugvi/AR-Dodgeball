@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.tag == "Ball")
 		{
             UiController.instance.IncreaseScore();
-            Destroy(other.gameObject,1f);
+            Destroy(other.gameObject,0.1f);
             Debug.Log("hit");
 		}
 	}
